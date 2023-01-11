@@ -24,10 +24,10 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1: Set Domain Controller’s NIC Private IP address to be static.
+- Step 2: Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall.
+- Step 3: Login to DC-1 and install Active Directory Domain Services.
+- Step 4: Open PowerShell_ise as an administrator.
 
 <h2>Deployment and Configuration Steps</h2>
 
