@@ -8,7 +8,7 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
+- ### [YouTube: How to Deploy on-premises Active Directory within Azure](https://youtu.be/1ykkNbECq84)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -25,32 +25,34 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Step 1: Set Domain Controller’s NIC Private IP address to be static.
-- Step 2: Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall.
+- Step 2: Login to the Domain Controller and enable ICMPv4 on the local windows Firewall.
 - Step 3: Login to DC-1 and install Active Directory Domain Services.
-- Step 4: Open PowerShell_ise as an administrator.
+- Step 4: Join second VM to the domain.
+- Step 5: Enable remote desktop for non-administrative users on second VM.
+- Step 6: Open PowerShell_ise as an administrator to generate users.
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dtWikXX.png" height="80%" width="80%" alt="Enable ICMPv4 on Firewall"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Enable ICMPv4 on the Domain Controller's local windows firewall.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/XXmOzbs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install Active Directory Domain Services on the Domain Controller.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/iiI8beg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Open PowerShell_ise as an administrator to generate users.
 </p>
 <br />
